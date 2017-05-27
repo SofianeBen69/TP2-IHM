@@ -5,6 +5,8 @@
  */
 package controleur;
 
+import conteneurGenerique.Conteneur;
+
 /**
  *
  * @author sofiane
@@ -15,10 +17,19 @@ public class TP2 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
-    }
+Conteneur<Integer,String> cont=new Conteneur<>();
+cont.ajouter(1, "ll");
+cont.ajouter(2, "mr");
+System.out.println(cont.cleSuivante());
+System.out.println(cont.cleSuivante());
+System.out.println(cont.clePrecedente());
+
+
+
+
+        
+        }
     
 }
 
 
-public class Conteneur<K extends Comparable<k> & Serializable, V extends Serializable
