@@ -6,6 +6,8 @@
 package controleur;
 
 import conteneurGenerique.Conteneur;
+import javax.swing.JFrame;
+import vue.GesPers;
 
 /**
  *
@@ -17,12 +19,8 @@ public class TP2 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-Conteneur<Integer,String> cont=new Conteneur<>();
-cont.ajouter(1, "ll");
-cont.ajouter(2, "mr");
-System.out.println(cont.cleSuivante());
-System.out.println(cont.cleSuivante());
-System.out.println(cont.clePrecedente());
+  JFrame frame = new GesPers();
+  frame.setVisible(true);
 
 
 
